@@ -1,0 +1,91 @@
+/**************************************
+
+    File Name: style.css
+    Template Name: Markedia
+    Created By: HTML.Design
+    http://themeforest.net/user/wpdestek
+
+**************************************/
+
+/**************************************
+    Table of Content
+    
+    1. BASIC
+    2. HEADER
+    3. SECTION
+    4. FOOTER
+    5. PAGES
+    6. BLOG
+    7. WIDGETS
+**************************************/
+
+/* BASIC 
+**************************************/
+
+body {
+    font-size: 15px;
+    line-height: 26px;
+    background-color: #ffffff;
+    /* color: #5e5e5e; */
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.section {
+    
+    padding: 4rem 0;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    
+}
+
+.section.lb {
+    background-color: #edeff2;
+    /* margin-top: 60px; */
+}
+
+
+ul {
+    /* list-style: none; */
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar .blog-list-widget img {
+    width: 55px;
+    padding: 0;
+}
+
+.sidebar a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.blog-list-widget .list-group-item {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+
+
+.sidebar .widget-title {
+    display: block;
+    font-size: 30px;
+    margin: 0 0 2rem;
+    padding: 0;
+    line-height: 1;
+}
+
+
+.sidebar .widget {
+    position: relative;
+    display: block;
+    margin-bottom: 3rem;
+}
+.link-widget >ul>li>a:hover,.blog-list-widget>div>a>div:hover{
+    color: #BB1013;
+}
