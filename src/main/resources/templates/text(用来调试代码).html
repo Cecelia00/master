@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/template-web.js"></script>
+    <!-- <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+
+    <style>
+        body {
+            font-family: SF Pro SC, SF Pro Display, SF Pro Icons, AOS Icons, PingFang SC, Helvetica Neue, Helvetica, Arial, sans-serif;
+        }
+
+        @font-face {
+            font-family: 'YuWeisform';
+            /* 这个名字可以自己定义 */
+            src: url('fonts/YuWeisform.ttf');
+            /* IE9 Compat Modes */
+            /*这里以及下面的src后面的地址填的都是自己本地的相对地址*/
+            /* Legacy iOS */
+            /* font-weight: bold;
+            font-style: normal; */
+        }
+
+        .first {
+            z-index: 99;
+        }
+
+        .logoimg {
+            position: fixed;
+            left: 20px;
+            top: 0px;
+            width: 62px;
+            height: 62px;
+        }
+
+        .navbar-header {
+            padding-left: 200px;
+            height: 45px;
+        }
+
+        li a {
+            font-size: 18px;
+            color: #000;
+
+        }
+
+        li a:hover {
+            padding: 0px -2px;
+            border-bottom: 1px solid #000000;
+        }
+
+
+        .button-header {
+            padding-top: 7px;
+        }
+
+        .navbar-toggler {
+            margin-top: 3px;
+        }
+
+        /* Make the image fully responsive */
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .my-navbar {
+            padding: 9px;
+            transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+            background-color: #ffffff;
+            opacity: 0.50;
+            -webkit-box-shadow: 3px 2px 37px -13px rgba(0, 0, 0, .3);
+            box-shadow: 3px 2px 37px -13px rgba(0, 0, 0, .3);
+
+
+        }
+
+        .my-navbar a {
+            background: transparent !important;
+            /* color: #fff !important */
+        }
+
+        .my-navbar a:hover {
+            color: #000000 !important;
+            background: transparent;
+            outline: 0
+        }
+
+        .my-navbar a {
+            transition: color 0.5s ease-in-out;
+        }
+
+        /*-webkit-transition ;-moz-transition*/
+
+        .top-nav {
+            padding: 9px 5px;
+            background: #ffffff;
+            opacity: 1;
+        }
+
+        button.navbar-toggle {
+            background-color: #fbfbfb;
+        }
+
+        /*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
+
+        button.navbar-toggle>span.icon-bar {
+            background-color: #dedede
+        }
+
+        /* 
+        导航栏登录注册css
+         */
+        .login {
+            /* padding: 15px 25px; */
+            border: unset;
+            border-radius: 5px;
+            color: #000000;
+            z-index: 1;
+            background: #e4e3e3;
+            position: relative;
+            font-weight: 1000;
+            font-size: 10px;
+            -webkit-box-shadow: 0px 0px 11px -6px rgba(0, 0, 0, .3);
+            box-shadow: 0px 0px 11px -6px rgba(0, 0, 0, .3);
+            transition: all 250ms;
+            overflow: hidden;
+        }
+
+        .login::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            /* border-radius: 3px; */
+            background-color: #0d0c0c;
+            z-index: -1;
+            -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+            transition: all 250ms
+        }
+
+        .login:hover {
+            color: #e8e8e8;
+        }
+
+        .login:hover::before {
+            width: 100%;
+        }
+
+        .resd {
+            /* padding: 15px 25px; */
+            border: unset;
+            border-radius: 5px;
+            color: #000000;
+            z-index: 1;
+            background: #e4e3e3;
+            position: relative;
+            font-weight: 1000;
+            font-size: 10px;
+            -webkit-box-shadow: 0px 0px 11px -6px rgba(0, 0, 0, .3);
+            box-shadow: 0px 0px 11px -6px rgba(0, 0, 0, .3);
+            transition: all 250ms;
+            overflow: hidden;
+        }
+
+        .resd::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            border-radius: 3px;
+            background-color: #0d0c0c;
+            z-index: -1;
+            transition: all 250ms
+        }
+
+        .resd:hover {
+            color: #e8e8e8;
+        }
+
+        .resd:hover::before {
+            width: 100%;
+        }
+
+        /* 
+        导航栏登录注册css结束
+         */
+
+        /*轮播图左右按钮*/
+        .prev {
+            position: absolute;
+            left: 2%;
+            top: 50%;
+            margin-top: 15px;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(0, 0, 0, .3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 45px;
+            border-radius: 45px;
+            /* display: none; */
+            z-index: 2;
+        }
+
+        .next {
+            position: absolute;
+            right: 2%;
+            top: 50%;
+            margin-top: 15px;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(0, 0, 0, .3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 45px;
+            border-radius: 45px;
+            /* display: none; */
+            z-index: 2;
+        }
+
+        /* 
+          导航栏收缩时展示按钮
+         */
+        .burger {
+            position: relative;
+            width: 33px;
+            height: 18px;
+            background: transparent;
+            cursor: pointer;
+            top: 4px;
+        }
+
+        .burger input {
+            display: none;
+        }
+
+        .burger span {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: black;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        .burger span:nth-of-type(1) {
+            top: 0px;
+            transform-origin: left center;
+        }
+
+        .burger span:nth-of-type(2) {
+            top: 50%;
+            transform: translateY(-50%);
+            transform-origin: left center;
+        }
+
+        .burger span:nth-of-type(3) {
+            top: 100%;
+            transform-origin: left center;
+            transform: translateY(-100%);
+        }
+
+        .burger input:checked~span:nth-of-type(1) {
+            transform: rotate(45deg);
+            top: -3px;
+            left: 5px;
+        }
+
+        .burger input:checked~span:nth-of-type(2) {
+            width: 0%;
+            opacity: 0;
+        }
+
+        .burger input:checked~span:nth-of-type(3) {
+            transform: rotate(-45deg);
+            top: 21px;
+            left: 5px;
+        }
+
+        .search {
+            z-index: 99;
+            height: 50px;
+            width: 100%;
+            position: fixed;
+            top: 61px;
+            padding: 10px 0px;
+            background: rgba(156, 156, 156, 0.45);
+            backdrop-filter: blur(2px);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .input {
+            width: 80%;
+            /* max-width: auto; */
+            height: 30px;
+            padding: 12px;
+            background-color: #fffdfd;
+            border-radius: 6px 0 0 6px;
+            border: 1.5px solid lightgrey;
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            /* box-shadow: 0px 0px 20px -18px; */
+        }
+
+        .input:hover {
+            border: 2px solid lightgrey;
+            box-shadow: 0px 0px 20px -17px;
+        }
+
+        .input:active {
+            transform: scale(0.95);
+        }
+
+        .input:focus {
+            border-radius: 26px 0 0 26px;
+        }
+
+        .button--submit {
+            border-radius: 0 6px 6px 0;
+            border: none;
+            background-color: #0d0c0c;
+            color: #fff;
+        }
+
+
+        /*
+        底部的设计
+        */
+       
+       .footer {
+           position: relative;
+           margin-top: -50px;  /* 使footer区块正好处于content的padding-bottom位置 */
+           height: 50px;
+           clear: both;
+           background-color: #4c54c5;
+           text-align: center;
+           padding: 10px;
+}
+
+        /* 
+          导航栏收缩时展示按钮结束
+         */
+
+        /* 更多活动按钮 */
+        .moreActivity {
+            width: 7.5em;
+            height: 2.3em;
+            /* margin: 0.5em; */
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 0.625em;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .moreActivity:hover {
+            color: black;
+        }
+
+        .moreActivity:after {
+            content: "";
+            background: white;
+            position: absolute;
+            z-index: -1;
+            left: -20%;
+            right: -20%;
+            top: 0;
+            bottom: 0;
+            transform: skewX(-45deg) scale(0, 1);
+            transition: all 0.5s;
+        }
+
+        .moreActivity:hover:after {
+            transform: skewX(-45deg) scale(1, 1);
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        /*作品展示滑动页*/
+
+        /* #key-links-words2>div{
+            block-size: 320px;
+            background-color: #fff;
+            /* 设置宽高比 */
+        /* aspect-ratio: 1;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px rgba(173, 173, 173, 0.3);
+        } */
+
+        img {
+            border: 0
+        }
+
+        .lb1 {
+            width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 200px;
+            position: relative;
+        }
+
+
+        .lb1 .swiper-slide a {
+            width: auto;
+            height: 200px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            margin-right: 0;
+            cursor: pointer;
+            display: flex;
+            overflow: hidden;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        .lb1 .swiper-slide a img {
+            width: auto;
+            height: 100%;
+            display: block;
+        }
+
+        .lb1 .swiper-slide {
+            width: auto;
+
+        }
+
+        .lb1 .swiper-button-prev {
+            left: -39px;
+            width: 34px;
+            height: 34px;
+            background: url(img/biaoqian-arrowL.png) center no-repeat;
+            border-radius: 2px;
+            top: calc(50% - 17px);
+        }
+
+        .lb1 .swiper-button-prev:hover {
+            background: url(img/biaoqian-arrowL-sel.png) center no-repeat;
+        }
+
+        .lb1 .swiper-button-next {
+            right: -39px;
+            width: 34px;
+            height: 34px;
+            background: url(img/biaoqian-arrowR.png) center no-repeat;
+            border-radius: 2px;
+            top: calc(50% - 17px);
+        }
+
+        .lb1 .swiper-button-next:hover {
+            background: url(img/biaoqian-arrowR-sel.png) center no-repeat;
+        }
+
+        .swiper {
+            /* position: relative; */
+            width: 700px;
+            height: 450px;
+        }
+        .swiper img{
+            /* position: absolute; */
+            width: 700px;
+            height: 440px;
+        }
+        .activity a:hover{
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .my-pagination-clickable{
+            pointer-events:none;
+            text-align: right;
+            padding: 5px;
+            background-color:rgba(0,0,0,0.1);
+        }
+
+        .swiper .detail{
+            position:absolute;
+            bottom: 16px;
+            left: 20px; 
+        }
+
+        .swiper .detail a{
+            /* pointer-events:fill; */
+            color: white;
+            text-decoration: none; 
+        }
+
+        .swiper .detail a:hover{
+            color: white;
+            text-decoration: none; 
+        }
+
+        .row{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        /* 响应式 */
+        /* @media (max-width:991px) {
+    
+    .lb1 {
+               width: 100%;
+               text-align: center;
+    }
+    .lb1 .swiper-slide {
+        max-width: 80%;
+        margin-left: 0;
+    }
+} */
+        /*屏幕宽度小于600px,改变布局和样式*/
+        /* @media screen and (max-width:600px) {
+           .swiper-wrapper>div {
+               float: none;
+               width: 100%;
+               text-align: center;
+           }
+       } */
+        /*作品展示页结束*/
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-expand-md fixed-top my-navbar navbar-light " role="navigation">
+            <!-- logo -->
+
+            <a class="navbar-brand" href="#" style="margin-left: 150px;">
+                <img class="logoimg" src="img/logo3.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <label for="burger" class="burger">
+                    <input id="burger" type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </button>
+
+            <!-- mene -->
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar" style="">
+                <!-- navbar-collapse 缩减之后的样式 -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">活动</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">新闻中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">作品展示</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">教学</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="" href="">关于我们</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
+                    <li>
+                        <a class="btn btn-light " data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </i>
+                        </a>
+                        <!-- <button class="btn btn-light my-2 my-sm-0" type="submit"></button> -->
+                    </li>
+                </ul>
+                <button class="nav-link login d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">登录</button>
+                <button class="nav-link resd d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">注册</button>
+
+            </div>
+        </nav>
+        <form action="">
+            <div class="search">
+                <div class="input-group d-flex justify-content-center">
+                    <input type="text" class="input " placeholder="uiverse@verse.io" autocomplete="off">
+                    <input class="button--submit" value="搜索内容" type="submit">
+                </div>
+            </div>
+            <!-- col-lg-11 col-md-11 col-sm-10 -->
+        </form>
+        <!-- 导航栏结束 -->
+    </div>
+
+
+    <!--轮播图-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-interval="2000" data-ride="carousel">
+        <!--显示下方指针-->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Carousel-1.jpg" style="width: 100%; height: 470px;" alt="picture-1">
+                <div class="carousel-caption">
+                    <h5>第一张图片</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Carousel-2.jpg" style="width: 100%; height: 470px;" alt="picture-2">
+                <div class="carousel-caption ">
+                    <h5>第二张图片</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Carousel-3.jpg" style="width: 100%; height: 470px;" alt="picture-3">
+                <div class="carousel-caption ">
+                    <h5>第三张图片</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev prev" type="button" data-target="#carouselExampleIndicators"
+            data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next next" type="button" data-target="#carouselExampleIndicators"
+            data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+    <!--轮播图结束-->
+
+    <!-- 活动要闻开始 -->
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                    class="bi bi-newspaper" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z" />
+                    <path
+                        d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z" />
+                </svg>
+                <span class="align-middle"
+                    style="font-size: 24px;font-weight:bolder;font-family: YuWeisform;">活动要闻</span>
+
+            </div>
+            <div class="col">
+                <div class="float-right mr-3">
+                    <button class="moreActivity "> 进入活动中心
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 活动要闻结束 -->
+    <div class="row">
+        <div class="col">
+            <!-- 轮播图 -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <a href="#"><img src="img/1.png" /></a>
+                        <div class="detail">
+                            <a href="#">活动1</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/2.png" /></a>
+                        <div class="detail">
+                            <a href="#">活动2</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/3.png" /></a>
+                        <div class="detail">
+                            <a href="#">活动3</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="img/4.png" /></a>
+                        <div class="detail">
+                            <a href="#">活动4</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- 如果需要导航按钮 -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- 如果需要滚动条 -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+
+            </div>
+           
+        </div>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.swiper', {
+                //   direction: 'vertical', // 垂直切换选项
+                speed: 2500,
+                preventClicks : false,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                    waitForTransition: false,
+                    pauseOnMouseEnter: true,
+                },//自动切换
+                loop: true, // 循环模式选项
+                effect: 'fade',//切换效果
+
+                // 如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    bulletElement : 'li',
+                    clickableClass : 'my-pagination-clickable',
+                },
+
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // 如果需要滚动条
+                //   scrollbar: {
+                //     el: '.swiper-scrollbar',
+                //     dragSize: 30,
+                //   },
+
+                //鼠标方向控制
+                mousewheel: {
+                    invert: false,
+                },
+            })
+
+            //分页按钮函数
+            for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+                mySwiper.pagination.bullets[i].onmouseover = function () {
+                    this.click();
+                };
+            }
+            //鼠标置于swiper时暂停自动切换，鼠标离开时恢复自动切换函数。
+            mySwiper.el.onmouseover = function () {
+                mySwiper.autoplay.stop();
+            }
+            mySwiper.el.onmouseout = function () {
+                mySwiper.autoplay.start();
+            } 
+        </script>
+        <!--轮播图结束-->
+        <div class="col">
+            <ul class="activity" type="none">
+                <li class="">
+                    <a class="" href="#">活动1</a>
+                    <hr>
+                </li>
+                <li class="">
+                    <a class="" href="#">活动2</a>
+                    <hr>
+                </li>
+                <li class="">
+                    <a class="" href="#">活动3</a>
+                    <hr>
+                </li>
+                <li class="">
+                    <a class="" href="#">活动4</a>
+                    <hr>
+                </li>
+                <li class="">
+                    <a class="" href="#">活动5</a>
+                    <hr>
+                </li>
+                <li class="">
+                    <a class="" href="#">活动6</a>
+                    <hr>
+                </li>
+                <li class="">
+                    <a class="" href="#">活动7</a>
+                    <hr>
+                </li>
+                <li class="">
+                    <a class="" href="#">活动8</a>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--作品展示开始-->
+
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-images"
+                    viewBox="0 0 16 16">
+                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    <path
+                        d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
+                </svg>
+                <span class="align-middle"
+                    style="font-size: 24px;font-weight:bolder;font-family: YuWeisform;">作品展示</span>
+            </div>
+
+
+        </div>
+        <div class="lb1 row" style="width: 1200px; margin: 0 auto;">
+            <div class="swiper-container swiper-container1">
+                <div class="swiper-wrapper" id="key-links-words2">
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="img/1.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="img/2.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="img/3.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="img/4.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="img/1.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="img/2.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="javascript:" class="ellipsis">
+                            <img src="img/3.png" alt="">
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next1"></div>
+            <div class="swiper-button-prev swiper-button-prev1"></div>
+        </div>
+    </div>
+
+    <!--作品展示结束-->
+    
+    <div style="height: 1000px;"></div>
+    
+</body>
+<script>
+    $(window).scroll(function () {
+        if ($(".navbar ").offset().top > 50) {
+            $(".fixed-top ").addClass("top-nav ");
+        } else {
+            $(".fixed-top ").removeClass("top-nav ");
+        }
+    })
+
+</script>
+
+<script>
+    $(window).scroll(function () {
+        if ($(".navbar ").offset().top > 50) {
+            $(".fixed-top ").addClass("top-nav ");
+        } else {
+            $(".fixed-top ").removeClass("top-nav ");
+        }
+    })
+</script>
+<!-- <script>
+    /*当轮播图播放完所有图片就会触动此事件*/
+    $('.carousel').on('slide.bs.carousel',function(){
+        console.log('已经播放完所有图片！')
+    })
+</script> -->
+<script>
+
+    window.addEventListener('load', function () {
+        //1.获取元素
+        var prev = document.querySelector('.prev');
+        var next = document.querySelector('.next');
+        var ju = document.querySelector('.carouselExampleIndicators');
+
+        //轮播图：鼠标移上图片显示左右按钮
+        carouselExampleIndicators.addEventListener('mouseenter', function () {
+            prev.style.display = '';
+            next.style.display = '';
+
+        })
+        //鼠标移走时会隐藏左右按钮
+        carouselExampleIndicators.addEventListener('mouseleave', function () {
+            prev.style.display = 'none';
+            next.style.display = 'none';
+        })
+    })
+</script>
+<!--作品展示-->
+<script>
+    var swiper = new Swiper('.swiper-container1', {
+        slidesPerView: 'auto',/*根据slide的宽度自动调整展示数量*/
+        spaceBetween: 20,/*左右的间距20px*/
+        centeredSlides: false,/*是否居中显示*/
+        slidesPerGroup: 5,/*定义slides的5个为一组*/
+        navigation: {
+            nextEl: ".swiper-button-next1",
+            prevEl: ".swiper-button-prev1",
+        },
+    });
+</script>
+
+<footer id="footer">
+    <div class="container">
+        <div id="copy_txt" class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Copyright@2008-2022桂林电子科技大学北海校区</div>
+    </div>
+    版权所有：书法社2023
+    <div>地址: 广西北海市银海区南珠大道9号 邮编：536000 电话：0779-3221218 传真：0779-3221082 </div>
+    <a href="">桂林电子科技大学北海校区</a>
+    <p>地址：广西北海市银海区银滩镇南珠大道9号</p>
+
+</div>
+
+
+
+</html>

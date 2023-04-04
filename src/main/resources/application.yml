@@ -1,0 +1,67 @@
+server:
+  port: 8080
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/wanderer?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+#    username: root
+#    password: "123456."
+#    type: com.alibaba.druid.pool.DruidDataSource
+#
+#配置数据库规则
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/master?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: "123456."
+  cache:
+    type: caffeine
+
+  profiles:
+    # 外置jdbc、redis和mail配置文件
+    active: jdbc,redis,mail
+  # 关闭thymeleaf页面缓存
+  thymeleaf:
+    cache: false
+  # 配置国际化资源文件
+  messages:
+    basename: i18n.logo
+
+#发件人的邮箱的服务器相关配置
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 1264818637@qq.com  #配置个人的QQ帐号和和密码
+    password: gabaqfjqeqfgbaah
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+
+
+#配置mybatis规则
+mybatis:
+  #  config-location: classpath:mybatis/mybatis-config.xml
+  #全局只允许一个配置文件，这是开启驼峰命名规则的配置文件
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:   #指定mybatis全局配置文件中的配置项目，那就不需要mybatis-config.xml了
+    map-underscore-to-camel-case: true          #开启驼峰命名规则
+    #配置XML映射文件中指定的实体类别名路径
+  type-aliases-package:
+
+#pagehelper分页设置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+
+#浏览器cookie相关设置
+COOKIE:
+  # 设置cookie默认时长为30分钟
+  VALIDITY: 1800

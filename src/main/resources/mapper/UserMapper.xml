@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.open.mapper.UserMapper">
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO t_user (
+        email,user_name, password, gender,
+        phone, avatar,
+        created_time,  modified_time,salt
+        ) VALUES ( #{email}, #{username}, #{password}, #{gender},
+        #{phone}, #{avatar},#{createdTime},#{modifiedTime},#{salt}
+        )
+    </insert>
+
+    <update id="updatePasswordByEmail">
+        update t_user
+        set
+        password = #{password},
+        modified_time = #{modifiedTime}
+        where email = #{email};
+    </update>
+
+    <update id="updateInfoById">
+        update t_user
+        <set>
+            <if test="username != null and username != ''">
+                user_name = #{username},
+            </if>
+            <if test="gender != null and gender != ''">
+                gender = #{gender},
+            </if>
+            <if test="phone != null and phone != ''">
+                phone = #{phone},
+            </if>
+            <if test="modifiedTime != null and modifiedTime != ''">
+                modified_time = #{modifiedTime},
+            </if>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="studentId != null and studentId != ''">
+                student_id = #{studentId},
+            </if>
+        </set>
+        where id = #{id};
+    </update>
+
+
+    <!-- 更新用户的头像 -->
+    <!-- Integer updateAvatarByUid(
+        @Param("uid") Integer uid,
+        @Param("avatar") String avatar,
+        @Param("modifiedUser") String modifiedUser,
+        @Param("modifiedTime") Date modifiedTime
+    ); -->
+    <update id="updateAvatarById">
+        update t_user
+        <set>
+            <if test="avatar != null and avatar != ''">
+                avatar = #{avatar},
+            </if>
+            <if test="modifiedTime != null">
+                modified_time = #{modifiedTime},
+            </if>
+        </set>
+        where id = #{id};
+
+    </update>
+
+
+    <select id="getAll" resultType="com.open.pojo.User">
+        select * from t_user
+    </select>
+
+
+    <select id="getEmail" resultType="com.open.pojo.User">
+        select * from t_user where email = #{email}
+    </select>
+
+    <select id="findByid" resultType="com.open.pojo.User">
+        select * from t_user where id = #{id}
+    </select>
+
+
+</mapper>

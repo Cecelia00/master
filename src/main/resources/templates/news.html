@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="news">
+
+<head>
+    <title>新闻</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/template-web.js"></script>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* 卡片开始 */
+        .header {
+            background-color: #BB1013;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .skill {
+            padding: 10px;
+            /* border: #000000; */
+            border-bottom: 1px solid #d2cece;
+            /* text-align: center; */
+            /* display: inline; */
+            /* width: 24%;
+            text-decoration: none;
+            padding: 15px; */
+            list-style: none;
+        }
+
+        .skill:hover {
+            background-color: #D4DFE6;
+        }
+
+
+        /* 卡片结束 */
+        .form-box {
+            max-width: 100%;
+            background: #f1f7fe;
+            overflow: hidden;
+            border-radius: 16px;
+            color: #010101;
+        }
+
+        .form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 32px 24px 24px;
+            gap: 16px;
+
+        }
+
+        /*Form text*/
+        .title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /*Inputs box*/
+        .form-container {
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #fff;
+            margin: 1rem 0 .5rem;
+            width: 100%;
+        }
+
+        .input1 {
+            background: none;
+            border: 0;
+            outline: 0;
+            height: 40px;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            font-size: .9rem;
+            padding: 8px 15px;
+        }
+
+        .form-section {
+            padding: 16px;
+            font-size: .85rem;
+            background-color: #e0ecfb;
+            box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+        }
+
+        .form-section a {
+            font-weight: bold;
+            color: #0066ff;
+            transition: color .3s ease;
+        }
+
+        .form-section a:hover {
+            color: #005ce6;
+            text-decoration: underline;
+        }
+
+        /*Button*/
+        .form button {
+            background-color: #BB1013;
+            color: #fff;
+            border: 0;
+            border-radius: 24px;
+            padding: 10px 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color .3s ease;
+        }
+
+        .form button:hover {
+            background-color: #ed494c;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            font-size: 1.1em;
+            cursor: pointer;
+            background-color: #BB1013;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: all .4s;
+        }
+        /* 主要活动开始 */
+        .main {
+    margin-top: 30px;
+}
+
+* {
+    margin: 0px auto;
+}
+
+* {
+   
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.main {
+    margin-top: 30px;
+}
+
+* {
+    margin: 0px auto;
+}
+
+div {
+    display: block;
+}
+.kp_banner {
+    background: url(//qnzz.youth.cn/images/20210314_xds_kp_banner_new.jpg) no-repeat center center;
+    background-color: #d20117;
+    max-width: unset;
+    max-height: unset;
+    background-size: 100%;
+}
+.study_list2 li {
+    background: url(//qnzz.youth.cn/images/20210313_icon.png)no-repeat left;
+}
+.study_news_red li p
+{
+color:#666;
+}
+.xc-content{width:1200px;margin:0 auto}
+.xc-content .list01,.xc-content .list02{width:100%}
+.xc-content .list01{float: left;width:560px}
+.xc-content .list02{float: right;width:568px}
+.xc-content .list01 li,.xc-content .list02 li{font-size:16px}
+.xc-content .list01 li a,.xc-content .list02 li a{color:#000}
+
+.xc-content .list02 li{
+    text-indent: -7px;
+    line-height: 28px;
+    background: url(//qnzz.youth.cn/images/20210313_icon.png)no-repeat 0px 10px;
+    padding-left: 16px;
+}
+
+.xc-content .list01 li {
+    text-indent: -7px;
+    line-height: 28px;
+    background: url(//qnzz.youth.cn/images/20210313_icon.png)no-repeat 0px 10px;
+    padding-left: 16px;
+}
+.studytitle {
+    width: 100%;
+    height: 108px;
+    margin: 0 auto 20px;
+    background-color: #fbfbfb;
+    line-height: 108px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.studytitle a{
+text-decoration: none;
+letter-spacing: 2px;
+}
+.study_list2 {
+  
+    padding: 35px 20px 35px 40px;
+}
+
+.xc-content .text01 {
+    float: left;
+    width: 560px;
+}
+.xc-content .text02 {
+    float: right;
+    width: 568px;
+}
+
+.xc-content .text01 li {
+    text-indent: 0px;
+    line-height: 28px;
+    background: url(//qnzz.youth.cn/images/20210313_icon.png)no-repeat 0px 10px;
+    padding-left: 16px;
+}
+.xc-content .text02 li {
+    text-indent: 0px;
+    line-height: 28px;
+    background: url(//qnzz.youth.cn/images/20210313_icon.png)no-repeat 0px 10px;
+    padding-left: 16px;
+}
+.xc-content .text01 li a, .xc-content .text02 li a {
+    color: #000;
+}
+.xc-content .text01 li, .xc-content .text02 li {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.studymenu a {
+    color: #fff;
+    margin: 0 60px;
+}
+.xc-content .list01 {
+    float: left;
+    width: 610px;
+}
+
+    </style>
+    <script>
+        (function(){
+            function preloadimages(arr) {
+                var img = null;
+                var img_arr = Array.isArray(arr) ? arr : [arr];
+                for (var i = 0; i < img_arr.length; i++) {
+                    img = new Image();
+                    img.src = img_arr[i];
+                }
+            }
+            preloadimages(['//qnzz.youth.cn/images/20210314_xds_kp_banner_new.jpg']);
+        });
+            
+                
+        </script>
+        
+        <script>
+                IsPC();
+                function IsPC() {
+                var userAgentInfo = navigator.userAgent;
+                var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+                var flag = true;
+                for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+                }
+                }
+                if (flag == false) {
+                window.location.href = "http://qnzz.youth.cn/zhuanti/xxjy/index_24274.htm"
+                }
+                }
+                </script>
+</head>
+
+<body>
+    <div class="first">
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-expand-lg fixed-top my-navbar  navbar-light " role="navigation">
+            <!-- logo -->
+
+            <a class="navbar-brand" href="#" style="margin-left: 240px;">
+                <img class="logoimg" src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <label for="burger" class="burger">
+                    <input id="burger" type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </button>
+
+            <!-- mene -->
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <!-- navbar-collapse 缩减之后的样式 -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">活动</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">新闻</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calligraphy_works.html">作品展示</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course.html">教学</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="" href="about.html">加入我们</a>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
+                    <li class="btnli">
+                        <a class="btn btn-light " data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                    style="color: #BB1013;" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </i>
+                        </a>
+                        <!-- <button class="btn btn-light my-2 my-sm-0" type="submit"></button> -->
+                    </li>
+                </ul>
+                <button class="nav-link login d-lg-inline-block mb-3 mb-md-0 ml-lg-3 mt-2" href=""><a
+                        href="login.html">登录</a> </button>
+                <button class="nav-link resd d-lg-inline-block mb-3 mb-md-0 ml-lg-3 mt-2" href=""><a
+                        href="register.html">注册</a></button>
+
+            </div>
+        </nav>
+        <div class="search" style="display: none;">
+            <form action="">
+                <div class="input-group d-flex justify-content-center">
+                    <input type="text" class="input " placeholder="请输入您想要输入的内容" autocomplete="off">
+                    <input class="button--submit" value="搜索内容" type="submit">
+                </div>
+
+            </form>
+        </div>
+        <!-- 导航栏结束 -->
+    </div>
+    <!--内容-->
+    <img src="img/new17.jpg" alt=""width="100%" height="380px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="slidImgDiv">
+                    <ul>
+                      
+                          <li> 
+                             <a href='https://www.sohu.com/a/651581684_121124385'  TARGET="_blank">
+                                <img src="img/new10.jpg" alt="书法家道德.jpg" width='600' height='365'/>
+                             </a>
+                            <div class="txt"> 
+                               <a href="//qnzz.youth.cn/zhuanti/xxjy/ywdt/202205/t20220504_13664689.htm" target="_blank">2023上善之约——中国书法名家精品展 </a>
+                            </div>
+                            <span class="marking"></span>
+                          </li>
+                      
+                          <li> 
+                             <a href='http://www.360doc.com/content/23/0219/14/42782783_1068448802.shtml'  TARGET="_blank">
+                                <img src="img/new4.jpg" alt="中国书法.png" width='600' height='365'/>
+                             </a>
+                            <div class="txt"> 
+                               <a href="http://www.360doc.com/content/23/0219/14/42782783_1068448802.shtml" target="_blank">《中国书法》2023年第1期要览</a>
+                            </div>
+                            <span class="marking"></span>
+                          </li>
+                      
+                          <li> 
+                             <a href='https://baijiahao.baidu.com/s?id=1749652053659873069&wfr=spider&for=pc'  TARGET="_blank">
+                                <img src="img/new5.jpg" alt="W020220224160039837043.jpg" width='600' height='365'/>
+                             </a>
+                            <div class="txt"> 
+                               <a href="https://baijiahao.baidu.com/s?id=1749652053659873069&wfr=spider&for=pc" target="_blank">中国书协将于2023年举办全国第十三届书法篆刻展</a>
+                            </div>
+                            <span class="marking"></span>
+                          </li>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="study_k fr">
+                    <ul class="top_list floright ">
+                        
+                          <li class="bs_line mb15">
+                            <span>
+                              <a href="http://news.youth.cn/gn/202201/t20220130_13414111.htm" target="_blank">苏士澍｜水墨本色-2023年度中国当代书画名家作品鉴赏</a>
+                            </span>
+                             <p>
+                                “水墨”与“本色”合称，指涉 “水墨” 作为传统中国面的一种语言和创作本体生命的特性，是将“本色” 置于当代文化情境中的水墨本色。
+                             </p>
+                          </li>
+                      
+                          <li class="bs_line mb15">
+                            <span>
+                              <a href="http://m.52jingsai.com/article-18774.html" target="_blank">2023年中国梦·翰墨朝阳第五届全国书法大赛</a>
+                            </span>
+                             <p>
+                                为进一步宣传贯彻党的二十大精神，继承和弘扬中华民族优秀传统文化，以书法特有的艺术形式，展现书法艺术魅力,展示当代书法创作成果。
+                             </p>
+                          </li>
+                      
+                
+                    </ul>
+                    <ul class="study_list mt10">
+                      
+                        <li>
+                            <a href="https://www.163.com/dy/article/I0BUC6Q605562BG6.html" target="_blank">【采访报道】2023年中国著名书法家严英——书法作品赏析</a>
+                        </li>
+                      
+                        <li>
+                            <a href="https://www.163.com/dy/article/I0EQKP830553AACA.html" target="_blank">【采访报道】2023年中国著名书法家寇斌——书法作品赏析</a>
+                        </li>
+                      
+                        <li>
+                            <a href="https://new.qq.com/rain/a/20230315A04HSN00" target="_blank">【采访报道】2023年中国著名书法家连乾坤——书法作品赏析</a>
+                        </li>
+                      
+                     
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <div class="content_dj" >
+        <div class="w">
+            <div class="studytitle">
+               
+                 <a href="https://new.qq.com/rain/a/20230325A02WVX00" target="_blank">2023沈门七子书法展（高清作品集）</a>
+               
+            </div>
+            <div class="reporter">
+            <div class="jiaodl fl"> 
+        <div id="focus" class="jsArea floatr">
+                  <div class="slidContrlDiv">
+                    <ol>
+                      <li class="current"><a href="javascript:void(0)"></a></li>
+                      <li><a href="javascript:void(0)"></a></li>
+                      <li><a href="javascript:void(0)"></a></li>
+                      <li><a href="javascript:void(0)"></a></li>
+                    </ol>
+                  </div>
+                  <div class="slidImgDiv">
+                    <ul>
+                      
+                          <li> 
+                             <a href='https://www.sohu.com/a/651581684_121124385'  TARGET="_blank">
+                                <img src="img/new10.jpg" alt="书法家道德.jpg" width='600' height='365'/>
+                             </a>
+                            <div class="txt"> 
+                               <a href="//qnzz.youth.cn/zhuanti/xxjy/ywdt/202205/t20220504_13664689.htm" target="_blank">2023上善之约——中国书法名家精品展 </a>
+                            </div>
+                            <span class="marking"></span>
+                          </li>
+                      
+                          <li> 
+                             <a href='http://www.360doc.com/content/23/0219/14/42782783_1068448802.shtml'  TARGET="_blank">
+                                <img src="img/new4.jpg" alt="中国书法.png" width='600' height='365'/>
+                             </a>
+                            <div class="txt"> 
+                               <a href="http://www.360doc.com/content/23/0219/14/42782783_1068448802.shtml" target="_blank">《中国书法》2023年第1期要览</a>
+                            </div>
+                            <span class="marking"></span>
+                          </li>
+                      
+                          <li> 
+                             <a href='https://baijiahao.baidu.com/s?id=1749652053659873069&wfr=spider&for=pc'  TARGET="_blank">
+                                <img src="img/new5.jpg" alt="W020220224160039837043.jpg" width='600' height='365'/>
+                             </a>
+                            <div class="txt"> 
+                               <a href="https://baijiahao.baidu.com/s?id=1749652053659873069&wfr=spider&for=pc" target="_blank">中国书协将于2023年举办全国第十三届书法篆刻展</a>
+                            </div>
+                            <span class="marking"></span>
+                          </li>
+                      
+                          <li> 
+                             <a href='https://www.sohu.com/a/656590356_787514'  TARGET="_blank">
+                                <img src="img/new8.jpeg" alt="2023年书法作品赏析.png" width='600' height='365'/>
+                             </a>
+                            <div class="txt"> 
+                               <a href="https://www.sohu.com/a/656590356_787514" target="_blank">2023年中国著名书法家赵连清——书法作品赏析</a>
+                            </div>
+                            <span class="marking"></span>
+                          </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+      </div>
+          <div class="study_k fr">
+            <ul class="top_list floright ">
+                
+                  <li class="bs_line mb15">
+                    <span>
+                      <a href="http://news.youth.cn/gn/202201/t20220130_13414111.htm" target="_blank">苏士澍｜水墨本色-2023年度中国当代书画名家作品鉴赏</a>
+                    </span>
+                     <p>
+                        “水墨”与“本色”合称，指涉 “水墨” 作为传统中国面的一种语言和创作本体生命的特性，是将“本色” 置于当代文化情境中的水墨本色。
+                     </p>
+                  </li>
+              
+                  <li class="bs_line mb15">
+                    <span>
+                      <a href="http://m.52jingsai.com/article-18774.html" target="_blank">2023年中国梦·翰墨朝阳第五届全国书法大赛</a>
+                    </span>
+                     <p>
+                        为进一步宣传贯彻党的二十大精神，继承和弘扬中华民族优秀传统文化，以书法特有的艺术形式，展现书法艺术魅力,展示当代书法创作成果。
+                     </p>
+                  </li>
+              
+        
+            </ul>
+            <ul class="study_list mt10">
+              
+                <li>
+                    <a href="https://www.163.com/dy/article/I0BUC6Q605562BG6.html" target="_blank">【采访报道】2023年中国著名书法家严英——书法作品赏析</a>
+                </li>
+              
+                <li>
+                    <a href="https://www.163.com/dy/article/I0EQKP830553AACA.html" target="_blank">【采访报道】2023年中国著名书法家寇斌——书法作品赏析</a>
+                </li>
+              
+                <li>
+                    <a href="https://new.qq.com/rain/a/20230315A04HSN00" target="_blank">【采访报道】2023年中国著名书法家连乾坤——书法作品赏析</a>
+                </li>
+              
+             
+            </ul>
+          </div>
+        </div>
+        </div>
+        </div>
+    </div> -->
+    <!--信息交流-->
+          <div class="cl"></div>
+      <div class="content_dj" >
+                     <div class="study_lm" >
+               <center><a href="./xxjl/" target="_blank"><img src="img/new2.jpeg" style="height: 260px;" /></a></center>
+              </div>
+                   <div class="xc-content">
+            <ul class="study_list mt10 list01">
+              
+                <li>
+                  <a href="https://zhuanlan.zhihu.com/p/610946362" target="_blank">熊德建：庆祝2023全国两会胜利召开书画精品展</a>
+                </li>
+              
+    
+            </ul>
+            <ul class="study_list mt10 list02">
+                       
+    
+              <li>
+                    <a href="http://k.sina.com.cn/article_1699432410_v654b47da020012cel.html" target="_blank">2023年1月22日 新华纵横（半成品</a>
+                </li>	 
+         
+    
+            </ul>
+      <ul class="study_list mt10 list01">
+              
+                <li>
+                 <a href="https://www.sohu.com/a/648563957_121434699" target="_blank">重磅 | 2022年度中原十大美术新闻、十大书法新闻评选揭晓</a>
+                </li>
+              
+    
+            </ul>
+            <ul class="study_list mt10 list02">
+                       
+    
+              <li>
+                <a href="https://baijiahao.baidu.com/s?id=1759342076619946790&wfr=spider&for=pc" target="_blank">2022“中国书法•年展”全国楷书作品展入展名单公布</a>
+                </li>	 
+         
+    
+            </ul>
+           <ul class="study_list mt10 list01">
+              
+                <li>
+                   <a href="https://new.qq.com/rain/a/20230223A08L2600" target="_blank">中国书协2022“中国书法年展”全国行草书作品展开评</a>
+                </li>
+              
+    
+            </ul>
+             <ul class="study_list mt10 list02">
+                       
+    
+              <li>
+                    <a href="https://caijing.chinadaily.com.cn/a/202301/03/WS63b3cf81a3102ada8b22973a.html" target="_blank">中国大书法2022年年度汉字揭晓 “开”字当选</a>
+                </li>	 
+         
+    
+            </ul>
+        </div>
+              </div>
+    
+    <!--新闻传媒中心结束-->
+    <!--新闻简述-->
+           <div class="content_dj" >
+                     <div class="study_lm" >
+               <center> <img src="img/new7.jpeg" /></center>
+              </div>
+                   <div class="xc-content">
+                  <ul class="study_list mt10 text01">
+              
+                <li>
+                                <a href="https://mp.weixin.qq.com/s?__biz=MjM5OTgxMDU0NA==&mid=2654839396&idx=1&sn=302a51165b665514c4ecfe6d77f1429e&chksm=bcfcc6fb8b8b4fedfb826106bda653de62c7aa6098a9cb55df8328dc972661531202708ffd09&scene=27" target="_blank">
+                                    弘扬优秀传统文化 书写时代正大气象</a>
+                </li>
+              
+                <li>
+                                <a href="http://news.cctv.com/2022/10/21/ARTIEwjtQC8qJrIUhWnpi5dz221021.shtml" target="_blank">感受中国书法之美 领略传统文化魅力</a>
+                </li>
+              
+                <li>
+                                <a href="http://www.rmysjzx.com/news/202006/t20200623_5628.html" target="_blank">中国书法新闻事件你知道吗?》</a>
+                </li>
+              
+                <li>
+                                <a href="http://www.xh0.com/news/news/" target="_blank">书法艺术动态　艺术新闻</a>
+                </li>
+              
+                <li>
+                                <a href="http://www.fuzeyu.com/list/xinwen" target="_blank">书法新闻|书法在线学习</a>
+                </li>
+              
+    
+            </ul>
+               <ul class="study_list mt10 text02">
+              
+                <li>
+                                <a href="http://www.sc.chinanews.com.cn/bwbd/2023-03-17/183716.html" target="_blank">丹棱：黄庭坚书法作品首次入川并开展</a>
+                </li>
+              
+                <li>
+                                <a href="http://icicc.blcu.edu.cn/art/2020/1/4/art_15023_1152316.html" target="_blank">新刊导读丨《中国书法国际传播》第一辑</a>
+                </li>
+              
+                <li>
+                                <a href="https://media.beer/news/55230085?type=article" target="_blank">中国书法家协会主席孙晓云：一笔一画扬书法之美</a>
+                </li>
+              
+                <li>
+                                <a href="https://mp.weixin.qq.com/s?__biz=MzAxMjE0NTAyNw==&mid=2652623246&idx=1&sn=6a5bd7dd6c08191e091944c8eb55fe5c&chksm=80592962b72ea074b1331f3f6dd9567ce7a528341af5cc988a5016f6efeda780b6b48d91b699&scene=27" target="_blank">
+                                    《中国书法报》丨热点评述</a>
+                </li>
+              
+                <li>
+                                <a href="https://new.qq.com/rain/a/20230129A05T4600" target="_blank">书法史上的“第一神品</a>
+                </li>
+              
+    
+            </ul>
+              
+         
+        </div>
+              </div>
+    
+    <!--新闻简述结束-->
+    
+          <div class="content_dj" >
+              <div class="study_lm" >
+               <center style="margin-top: 26px;"> <a href="./xxjy/" target="_blank"><img src="img/new16.jpeg" /></a></center>
+              </div>
+            <div class="w">
+                <div class="study_news fl">
+                <ul class="study_news_red">
+    
+                 
+                    <li>
+                        <span>
+                          <a href="https://mp.weixin.qq.com/s?__biz=MzIxNTE5MDk0Mw==&mid=2650521139&idx=4&sn=fcde89f280cf9d37b9f1f6c7c3e59888&chksm=8f9302c3b8e48bd5fa72fe616f0043f856afd66c9ac52245cf88626bf5c325ddb6a220583fe3&scene=27" target="_blank">
+                            十大书法名家趣闻逸事</a>
+                        </span>
+                        <p>
+                            王羲之书法趣闻
+                            　　王羲之却有他特殊的癖好。不管哪里有好鹅，他都有兴趣去看，或者把它买回来玩赏。
+                        <a href='https://mp.weixin.qq.com/s?__biz=MzIxNTE5MDk0Mw==&mid=2650521139&idx=4&sn=fcde89f280cf9d37b9f1f6c7c3e59888&chksm=8f9302c3b8e48bd5fa72fe616f0043f856afd66c9ac52245cf88626bf5c325ddb6a220583fe3&scene=27' target="_blank"
+                         class="next-more">[详情]</a></p>
+                    </li>
+                 
+                    <li>
+                        <span>
+                          <a href="https://www.sohu.com/a/17439093_115213" target="_blank">王羲之天台山拜师的故事</a>
+                        </span>
+                        <p>
+                            王羲之在兰亭修禊之前来到天台山，被神奇秀丽的天台山风景吸引住了，便在山顶住了下来。他尽情欣赏日出奇观和云涛雾海，这些风光胜景使他的书法也得到润色。他不停地练字，不停地洗笔洗砚，竟把一个澄澈清碧的水池都染黑了。墨池就是这样得名的。
+                        <a href='https://www.sohu.com/a/17439093_115213' target="_blank" class="next-more">[详情]</a></p>
+                    </li>
+                 
+                    <li>
+                        <span>
+                          <a href="https://chc.hbedup.com/archives/2370" target="_blank">先秦书法逸事</a>
+                        </span>
+                        <p>
+                            关于造宇，有许多传说故事。相传，仓颉是黄帝手下的一个小官，黄帝分派他做管理圈里的性口、保管食物的事情。仓颉非常聪明，做事也很勤快，很快就熟悉了所管的牲口和食物，记清了数目，很少出错。可
+                            慢慢地，随着储藏的物资数量逐渐增加、变化频繁，脑袋记不清也记不佳了，难免出错。
+                        <a href='https://chc.hbedup.com/archives/2370' target="_blank" class="next-more">[详情]</a></p>
+                    </li>
+                 
+                    <li>
+                        <span>
+                          <a href="http://news.hsw.cn/system/2019/0314/1069706.shtml" target="_blank">书法大家辛烈分享儿时书法趣事</a>
+                        </span>
+                        <p>
+                            [摘要]辛烈先生通过华商网与众多书友分享书法的精髓与乐趣，喜爱书法的朋友参加华商网的送书活动，获赠辛烈先生著作《中国书史九百韵》一本。
+                        <a href='http://news.hsw.cn/system/2019/0314/1069706.shtml' target="_blank" class="next-more">[详情]</a></p>
+                    </li>
+                 
+                    <li>
+                        <span>
+                          <a href="http://fzjjbd.com/index.php?m=home&c=View&a=index&aid=1982" target="_blank">书法演绎精彩人生 ——中原书法艺术名家陈百年逸闻趣事</a>
+                        </span>
+                        <p>
+                            河南讯（王长安 田嵩）郑州报道：文化是民族的血脉，是人民的精神家园。实现中华民族的伟大复兴，必须推动社会主义文化大发展大繁荣，兴起社会主义建设新高潮，提高国家文化软实力，发挥文化引领风尚，教育人民、服务社会、推动发展的作用。
+                        <a href='http://fzjjbd.com/index.php?m=home&c=View&a=index&aid=1982A' target="_blank" class="next-more">[详情]</a></p>
+                    </li>
+                 
+                    <li>
+                        <span>
+                          <a href="https://www.sohu.com/a/126494901_587814" target="_blank">【典故】蔡琰请曹公</a>
+                        </span>
+                        <p>
+                            典故寓意：东汉才女蔡文姬丈夫犯法当死，文姬叩拜曹操求情，免董祀死罪，果得到曹操赦免。
+                        <a href='https://www.sohu.com/a/126494901_587814' target="_blank" class="next-more">[详情]</a></p>
+                    </li>
+                 
+                </ul>
+                </div>
+                    <ul class="study_pic fr">
+                     
+                        <li>
+                            <div class="borderkimgs">
+                                 <a href='https://mp.weixin.qq.com/s?__biz=MzUxNDg4Mjc0OQ==&mid=2247490946&idx=2&sn=ed60c03c4942cdef8cbde139d45a1636&chksm=f9be7050cec9f94633217269b1179d5be6c8d24ce82388a0b40539f7ec63cca4e90adeafaf87&scene=27' 
+                                  TARGET="_blank">
+                                    <img src="img/new3.jpeg" alt="new3.jpg" width='375' height='220' class='img'/>
+                                 </a>
+                                <p>
+                                   <a href="https://mp.weixin.qq.com/s?__biz=MzUxNDg4Mjc0OQ==&mid=2247490946&idx=2&sn=ed60c03c4942cdef8cbde139d45a1636&chksm=f9be7050cec9f94633217269b1179d5be6c8d24ce82388a0b40539f7ec63cca4e90adeafaf87&scene=27"
+                                    target="_blank">书法故事系列 智永—“退笔成冢</a>
+                                </p>
+                            </div>
+                        </li>
+                     
+                        <li>
+                            <div class="borderkimgs">
+                                 <a href='https://baijiahao.baidu.com/s?id=1685880130549677596&wfr=spider&for=pc'  TARGET="_blank">
+                                    <img src="img/new13.jpeg" alt="1.png" width='375' height='220' class='img'/>
+                                 </a>
+                                <p>
+                                   <a href="https://baijiahao.baidu.com/s?id=1685880130549677596&wfr=spider&for=pc" target="_blank">「丹青中国」中国书法趣闻之“正心正笔”柳公权</a>
+                                </p>
+                            </div>
+                        </li>
+                     
+                        <li>
+                            <div class="borderkimgs">
+                                 <a href='https://mp.weixin.qq.com/s?__biz=MzUyNTkwNzA3MQ==&mid=2247598827&idx=4&sn=b685e237004190d5cd008cacfbc22f0a&chksm=fa15e7fbcd626eed3c3eff6f76de381f736c9e559de2f37ab3b159dc2b1808d6b40334f8b9a9&scene=27'  TARGET="_blank">
+                                    <img src="img/new19.jpg" alt="new19.jpg" width='375' height='220' class='img'/>
+                                 </a>
+                                <p>
+                                   <a href="https://mp.weixin.qq.com/s?__biz=MzUyNTkwNzA3MQ==&mid=2247598827&idx=4&sn=b685e237004190d5cd008cacfbc22f0a&chksm=fa15e7fbcd626eed3c3eff6f76de381f736c9e559de2f37ab3b159dc2b1808d6b40334f8b9a9&scene=27" target="_blank">
+                                    【欣赏】唐代书法家——颜真卿的逸闻趣事</a>
+                                </p>
+                            </div>
+                        </li>
+                     
+                        
+                    </ul>
+    
+            </div>
+         </div>
+          <div class="cl"></div>
+              <!--实践活动-->
+          <div class="content_dj" >
+              <div class="study_lm" >
+               <center><a href="./sjhd/" target="_blank"> <img src="img/new20.jpeg" /></a></center>
+              </div>
+            <div class="w">
+                <div class="study_con cl">
+                        <div class="study_left fl">
+                                              <p class="study_name"><a href="http://www.360doc.com/content/19/0725/06/30837857_850859325.shtml" target="_blank" style="color:#fff">回往古时书法</a></p>
+                                             <ul class="study_list2">
+                              
+                                 <li>
+                                     <a href="https://www.maigoo.com/goomai/177448.html" target="_blank">书法的起源</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://baijiahao.baidu.com/s?id=1681576848634403542&wfr=spider&for=pc" target="_blank">书法的发展史</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://baijiahao.baidu.com/s?id=1665445118664029301&wfr=spider&for=pc" target="_blank">书法的繁荣时期——浅谈魏晋南北朝书法的发展历程和特点</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://baijiahao.baidu.com/s?id=1721460173337101833&wfr=spider&for=pc" target="_blank">书法的种类繁多</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://baijiahao.baidu.com/s?id=1672698705501640680&wfr=spider&for=pc" target="_blank">中国古代的书法艺术</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://zhidao.baidu.com/question/632425246914893364.html" target="_blank">古代书法的演变过程</a>
+                                 </li>
+                              
+                            </ul>
+    
+                        </div>
+                        <div class="study_right fr">
+                                      
+                                               <p class="study_name"><a href="https://sd.china.com/qlsh/20000951/20230109/25706053_1.html"  style="color:#fff" target="_blank">面向未来书法 </a></p>
+                            <ul class="study_list2">
+                              
+                                 <li>
+                                     <a href="https://baijiahao.baidu.com/s?id=1728698258372780854&wfr=spider&for=pc" target="_blank">中国书法的未来三大走向</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://mp.weixin.qq.com/s?__biz=MzIyMzU5OTUwOQ==&mid=2247531438&idx=1&sn=16c8ae12531ea2bc6d2382434b65474b&chksm=e819f554df6e7c42e34b1ee8022d54c742ad2d767c72b130507dd2f3f15a79b6811f9c81e2f5&scene=27" target="_blank">
+                                        【校园速递】经典筑梦向未来 笔墨中国巧生花</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://m.thepaper.cn/baijiahao_9879141" target="_blank">书法家看未来书法</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://baijiahao.baidu.com/s?id=1595110863034019015&wfr=spider&for=pc" target="_blank">书法的未来该何去何从</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://mp.weixin.qq.com/s?__biz=MzI3ODU5NTk4OA==&mid=2247549197&idx=6&sn=d969a7279636d247dfb75f00c11850da&chksm=eb56d1f6dc2158e0db72d288b52b8659a22659a84f068d7f19237b3cb2f41cd7aea59200d649&scene=27" target="_blank">
+                                        教育部：2022年书法课要全面开齐开足！</a>
+                                 </li>
+                              
+                                 <li>
+                                     <a href="https://learning.sohu.com/a/531739010_121345996" target="_blank">【水墨书法】对青少年书法培训产业的未来，你怎么看？ </a>
+                                 </li>
+                              
+                            </ul>
+                    </div>
+                 </div>
+                </div>
+         </div>
+      <!--实践活动-->
+    
+     <div class="cl"></div>
+              <!--新闻搜索回顾结束-->
+          <div class="content_dj" >
+              <div class="study_lm" >
+               <center> <a href="./zzsh/" target="_blank"><img src="img/new21.jpeg" /></a></center>
+              </div>
+            <div class="w">
+                <div class="study_life  clearfix">
+                       <div class="media-l">
+                                                <ul>   
+                                                
+                                                    <li>
+                                                        <a href="https://learning.sohu.com/a/658480497_260616" target="_blank">深度｜名家剖析青少年学书法的奥义：取法乎上、坚持、平常心</a>
+                                                    </li>
+                                                  
+    
+                                                    <li>
+                                                        <a href="http://k.sina.com.cn/article_2092600603_7cba8d1b020020hjf.html" target="_blank">展示八桂书风 彰显家国情怀：罗殿龙“敬畏经典”书法展在上海图书馆开展</a>
+                                                    </li>
+                                                  
+    
+                                                    <li>
+                                                        <a href="https://cul.sohu.com/a/655872901_121124390" target="_blank">难度加大！中国书法家协会发布最新入会细则</a>
+                                                    </li>
+                                                  
+    
+                                                    <li>
+                                                        <a href="http://k.sina.com.cn/article_1726918143_66eeadff02001gyzh.html" target="_blank">百名将军书法展西北大学启帷</a>
+                                                    </li>
+                                                  
+                                                </ul>
+                                            </div>
+                    <div class="media_icon"><img src="img/band1.png" /></div>
+                       <div class="media-r">
+                                            <ul>
+                                                
+                                                    <li>
+                                                        <a href="https://www.163.com/dy/article/I096UAI80514FGQ7.html" target="_blank">快讯丨“中外书写文化与美术交流”国际论坛在广州美术学院举行</a>
+                                                    </li>
+                                                  
+    
+                                                    <li>
+                                                        <a href="https://new.qq.com/rain/a/20230319A06AL500" target="_blank">上证夜读│宋汉光：道无穷——谈谈我的书法情缘</a>
+                                                    </li>
+                                                  
+    
+                                                    <li>
+                                                        <a href="https://baijiahao.baidu.com/s?id=1760942459957059802&wfr=spider&for=pc" target="_blank">书法是中华民族的国粹，是传统文化的基石</a>
+                                                    </li>
+                                                  
+    
+                                                    <li>
+                                                        <a href="https://www.163.com/dy/article/I0EIIMAF053705WV.html" target="_blank">爱心公益书画家作品“走基层、进万家”活动</a>
+                                                    </li>
+                                                  
+                                            </ul>
+                                        </div>                      
+                </div>
+            </div>
+         </div>
+              <!--组织生活结束-->
+    
+        </div>
+    
+    </div>
+
+</body>
+</html>

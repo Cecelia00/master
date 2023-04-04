@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/template-web.js"></script>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* 卡片开始 */
+        .header {
+            background-color: #BB1013;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .skill {
+            padding: 10px;
+            /* border: #000000; */
+            border-bottom: 1px solid #d2cece;
+            /* text-align: center; */
+            /* display: inline; */
+            /* width: 24%;
+            text-decoration: none;
+            padding: 15px; */
+            list-style: none;
+        }
+
+        .skill:hover {
+            background-color: #D4DFE6;
+        }
+
+
+        /* 卡片结束 */
+        .form-box {
+            max-width: 100%;
+            background: #f1f7fe;
+            overflow: hidden;
+            border-radius: 16px;
+            color: #010101;
+        }
+
+        .form {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 32px 24px 24px;
+            gap: 16px;
+
+        }
+
+        /*Form text*/
+        .title {
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+        }
+
+        /*Inputs box*/
+        .form-container {
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #fff;
+            margin: 1rem 0 .5rem;
+            width: 100%;
+        }
+
+        .input1 {
+            background: none;
+            border: 0;
+            outline: 0;
+            height: 40px;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+            font-size: .9rem;
+            padding: 8px 15px;
+        }
+
+        .form-section {
+            padding: 16px;
+            font-size: .85rem;
+            background-color: #e0ecfb;
+            box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+        }
+
+        .form-section a {
+            font-weight: bold;
+            color: #0066ff;
+            transition: color .3s ease;
+        }
+
+        .form-section a:hover {
+            color: #005ce6;
+            text-decoration: underline;
+        }
+
+        /*Button*/
+        .form button {
+            background-color: #BB1013;
+            color: #fff;
+            border: 0;
+            border-radius: 24px;
+            padding: 10px 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color .3s ease;
+        }
+
+        .form button:hover {
+            background-color: #ed494c;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            font-size: 1.1em;
+            cursor: pointer;
+            background-color: #BB1013;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: all .4s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <!-- 导航栏 -->
+        <nav class="navbar navbar-expand-lg fixed-top my-navbar  navbar-light " role="navigation">
+            <!-- logo -->
+
+            <a class="navbar-brand" href="#" style="margin-left: 240px;">
+                <img class="logoimg" src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <label for="burger" class="burger">
+                    <input id="burger" type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </button>
+
+            <!-- mene -->
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <!-- navbar-collapse 缩减之后的样式 -->
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">活动</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">新闻</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calligraphy_works.html">作品展示</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course.html">教学</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="" href="about.html">加入我们</a>
+
+                    </li>
+                </ul>
+                <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
+                    <li class="btnli">
+                        <a class="btn btn-light " data-toggle="collapse" href="#collapseExample" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                    style="color: #BB1013;" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </i>
+                        </a>
+                        <!-- <button class="btn btn-light my-2 my-sm-0" type="submit"></button> -->
+                    </li>
+                </ul>
+                <button class="nav-link login d-lg-inline-block mb-3 mb-md-0 ml-lg-3 mt-2" href=""><a
+                        href="login.html">登录</a> </button>
+                <button class="nav-link resd d-lg-inline-block mb-3 mb-md-0 ml-lg-3 mt-2" href=""><a
+                        href="register.html">注册</a></button>
+
+            </div>
+        </nav>
+        <div class="search" style="display: none;">
+            <form action="">
+                <div class="input-group d-flex justify-content-center">
+                    <input type="text" class="input " placeholder="请输入您想要输入的内容" autocomplete="off">
+                    <input class="button--submit" value="搜索内容" type="submit">
+                </div>
+
+            </form>
+        </div>
+        <!-- 导航栏结束 -->
+    </div>
+
+    <div class="">
+        <!-- <div class="firstAbout"></div> -->
+        <img src="img/aboutBanner.png" class="" alt="About us" style="width: 100%; ">
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3" style="">
+
+                <nav class="left" id="nav" style="  background-color: #fff;        -webkit-box-shadow: 0px 1px 22px -10px rgba(0,0,0,.3);box-shadow: 0px 1px 22px -10px rgba(0,0,0,.3);
+                border-radius: 10px;
+                overflow: hidden; margin-top: -30px;">
+                    <!-- 
+                    <div class="skill"><a href="">提交报名<span style="float: right;">></span></a></div>
+                    <div class="skill"><a href="">My Skills<span style="float: right;">></span></a></div>
+                    <div class="skill"><a href="">My Skills<span style="float: right;">></span></a></div> -->
+                    <div class="header">关于我们</div>
+
+                    <li class="act " style="list-style: none;">
+                        <div class="skill">
+                            <a href="">规则制度<span style="float: right;">></span></a>
+                        </div>
+                    </li>
+
+                    <li class="act " style="list-style: none;">
+                        <div class="skill">
+                            <a href="">协会报名<span style="float: right;">></span></a>
+                        </div>
+                    </li>
+                    <li class="act " style="list-style: none;">
+                        <div class="skill">
+                            <a href="">资料下载宣传<span style="float: right;">></span></a>
+                        </div>
+                    </li>
+                    <li class="act " style="list-style: none;">
+                        <div class="skill">
+                            <a href="">建议关于<span style="float: right;">></span></a>
+                        </div>
+                    </li>
+
+                </nav>
+            </div>
+            <div class="col-9" id="container" style="background-color: #ffffff;">
+                <section class="tab">
+                    <div style="font-size: 20px; margin-top: 30px;">规则制度
+                        <hr style="margin-top: -2px; border-bottom: 3px solid#BB1013;">
+                    </div>
+                    <div>
+                        <div id=""
+                            style="background-color: rgb(247, 247, 247);height: 52px;line-height: 52px; list-style: none;">
+                            <span href="info/1009/1461.htm" style="color: #BB1013;" target="_blank" title="">
+                                第一章 总 则</span>
+                        </div>
+                        <div class="media-body">
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                第1条
+                                按照教育部和学校的要求，为了进一步规范三人行书法社的管理，推动学生社团健康、有序地发展，繁荣校园文化，促进校园精神文明建设，推进学生素质教育，依据《宪法》、《教育法》、《高等教育法》以及其他有关法律、法规，及校内有关规定制定本条例。
+                            </p>
+                            <hr>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                第2条
+                                学生社团应当在宪法和相关的法律法规和学校管理制度范围内活动，接受学校的领导和管理。共青团四川大学委员会（以下简称校团委）受学校党委委托，在学校党委宣传部、学工部、保卫部、教务处等职能部门的配合支持下，承担对学生社团的指导及日常管理工作。
+                            </p>
+                            <hr>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                第3条
+                                学生社团各项活动必须遵守宪法、法律、法规和国家政策，必须遵守四川大学的规章制度。
+                            </p>
+                            <hr>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                第4条
+                                学生社团组织的宗旨是：坚持四项基本原则，遵守国家的法律法规和学校的有关规定，符合国家的教育方针，积极开展有益于学生身心健康，丰富校园文化生活的活动。
+                            </p>
+
+                            <hr>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                第5条
+                                学生社团的基本任务是：适应社会发展需求，适应教育改革及学生成
+
+                                长成才的需要，积极开展健康有益、丰富多彩的第二课堂活动，繁荣校园文化，充分体现学生社团的思想教育功能、凝聚功能、培养功能、示范功能，促进学生德、智、体、美全面发展，提高学生综合素质。
+                            </p>
+                        </div>
+                        <div id=""
+                            style="background-color: rgb(247, 247, 247);height: 52px;line-height: 52px; list-style: none;">
+                            <span href="info/1009/1461.htm" style="color: #BB1013;" target="_blank" title="">
+                                第二章 部门职能</span>
+                        </div>
+                        <div class="media-body">
+
+                            <span class="mt-4"
+                                style="margin-left: 5px; font-weight: bold; font-size: 15px; ">主席团简介:</span>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                主席团是协会的核心机构。负责协会的全方面工作，制定工作目标、工作任务，传达上级指示，落实工作计划，并亲自带领全体协会成员开展工作。（包括但不限于：协会内部活动方案与活动资金的最终审核，批准并签字确认；协会的对外形象宣传工作；代表协会出席上级组织和外部组织的各种会议；对协会各部门部长和下届会长的任免有最终审核、决定和确认权,对副会长，各部门部长的调配任免有提名权）
+                            </p>
+                            <hr>
+
+                            <span class="mt-4"
+                                style="margin-left: 5px; font-weight: bold; font-size: 15px; ">办公室:</span>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                办公室是联系各部门的桥梁和纽带,起到上传下达起草总结的作用。办公室负责协调各个部门共同办理综合性工作及协助主席团对接各部门工作职责的执行情况。收集工作总结，负责会议，活动的考勤和记录，整理各种资料和文件等工作。
+                            </p>
+                            <hr>
+                            <span class="mt-4"
+                                style="margin-left: 5px; font-weight: bold; font-size: 15px; ">新媒体部:</span>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                新媒体部主要负责协会的形象宣传和网络新媒体工作，对协会的重大活动进行宣传报道，负责海报制作、文案撰写、活动照片的拍摄等工作，它是一个展示创意与才华的平台。
+                            </p>
+                            <hr>
+                            <span class="mt-4"
+                                style="margin-left: 5px; font-weight: bold; font-size: 15px; ">对外联络部:</span>
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                对外联络部能够提升对外交流能力，在组织举办活动中，邀请校领导及其他社团人员参与活动。其成员负责采购物资，协助其他部门有序开展工作。是协会联系校内校外各单位建立合作的关键纽带。
+                            </p>
+
+
+                        </div>
+                    </div>
+
+                </section>
+                <section class="tab">
+                    <div style="font-size: 20px; margin-top: 30px;">报名加入
+                        <hr style="margin-top: -2px; border-bottom: 3px solid#BB1013;">
+                    </div>
+                    <span class="mt-2"
+                        style="margin-left: 5px;  font-size: 15px; ">现在是一个追求个性和创新的时代，艺术也成为了现代人生活中不可或缺的一部分。如果你对艺术有着浓厚的兴趣，特别是对书法艺术有着热爱，那么不妨考虑加入我们的书法社吧！</span>
+                    <p class="mt-2" style="margin-left: 5px;  font-size: 15px; ">
+                        在书法社中，你将有机会学习不同风格的书法和技巧，探索不同的书法形式和表现手法，了解书法的历史和文化背景。我们的教练员都是有着多年书法经验和丰富教学经验的专业人士，将会为你提供最专业的指导和帮助。
+                    </p>
+                    <p class="mt-2" style="margin-left: 5px;  font-size: 15px; ">
+                        同时，书法社也是一个充满创新和挑战的地方。我们会组织各种书法比赛和活动，让你有机会展示自己的才华和技能。通过参与这些活动，你将可以锻炼自己的书法技巧，挑战自我，提高自己的艺术修养。
+                    </p>
+                    <p class="mt-2" style="margin-left: 5px;  font-size: 15px;color: #BB1013; ">
+                        如果你想要加入我们的书法社，报名也非常简单。只需填写报名表格，缴纳少量的会费即可。我们欢迎所有对书法有兴趣的人加入我们的大家庭，无论你是初学者还是已经有一定书法基础的人，我们都会为你提供最专业的指导和帮助。
+                        加入书法社，让我们一起挥毫泼墨，创造出更美好的艺术世界！
+                    </p>
+                    <div class="form-box mt-2">
+
+                        <form class="form">
+                            <span class="title">欢迎加入三人行书法社 <span style="color: #BB1013;">报名提交</span> </span>
+                            <span class="subtitle">你将在这个文字的海洋里发觉你自己的文字美</span>
+                            <div class="form-container">
+                                <span class="mt-4"
+                                    style="margin-left: 5px; font-weight: bold; font-size:12px; ">请输入您的姓名:</span>
+                                <input type="text" class="input1" placeholder="Full Name">
+                                <span class="mt-4"
+                                    style="margin-left: 5px; font-weight: bold; font-size:12px; ">请输入您的学号:</span>
+                                <input type="email" class="input1" placeholder="Email">
+                                <span class="mt-4"
+                                    style="margin-left: 5px; font-weight: bold; font-size:12px; ">请输入您的年级和班级:</span>
+                                <input type="password" class="input1" placeholder="Password">
+                                <span class="mt-4"
+                                    style="margin-left: 5px; font-weight: bold; font-size:12px; ">请输入您的邮箱:</span>
+                                <input type="password" class="input1" placeholder="Password">
+                                <span class="mt-4"
+                                    style="margin-left: 5px; font-weight: bold; font-size:12px; ">请输入您的QQ:</span>
+                                <input type="password" class="input1" placeholder="Password">
+                                <span class="mt-4"
+                                    style="margin-left: 5px; font-weight: bold; font-size:12px; ">请输入您的手机号:</span>
+                                <input type="password" class="input1" placeholder="Password">
+                            </div>
+                            <button>提交</button>
+                        </form>
+                        <div class="form-section">
+                        </div>
+                    </div>
+
+                </section>
+                <section class="tab" style="">
+                    <div style="font-size: 20px; margin-top: 30px;">资料下载宣传
+                        <hr style="margin-top: -2px; border-bottom: 3px solid#BB1013;">
+                    </div>
+
+                    <p class="mt-2" style="margin-left: 5px;  font-size: 15px;color: #BB1013; ">
+                        书法是一门独特的艺术，它源远流长，有着悠久的历史。书法艺术不仅是一种文字表现方式，更是一种心灵的表现。<br>每一笔每一画都是在表达着书法家的情感和思想，这是其他艺术形式所无法替代的。
+                        如果你对书法有着浓厚的兴趣，如果你想要通过书法表达自己的情感和思想，那么加入书法社就是你最好的选择。<br>书法社是一个大家庭，我们有着共同的爱好和兴趣，用毛笔挥洒着我们的热情和才华。
+
+                    </p>
+                    <div class="card mb-3">
+                        <img src="img/about3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">获取最新的报名表</h5>
+                            <span>点击下载</span>
+                            <a href="附件：青年马克思主义协会招新报名表.docx" download="附件：青年马克思主义协会招新报名表.docx"> <button
+                                    class="btn">三人行书法协会招新报名表
+
+                                </button></a>
+                        </div>
+                    </div>
+
+
+
+                </section>
+                <section class="tab">
+                    <div style="font-size: 20px; margin-top: 30px;">建议关于
+                        <hr style="margin-top: -2px; border-bottom: 3px solid #BB1013;">
+                    </div>
+                    <div class="card mb-3">
+                        <img src="img/banner.png" class="card-img-top" alt="...">
+                        <div class="card-body" style="background: #ffffff;">
+                            <span>亲爱的同学们，你们好，我希望你们给我一些反馈，我们协会有不足的地方，以便及时改正给你们带来最方便的体验!</span>
+                            <div>
+                                <span>如果我们有做不好的地方，请您及时反馈，一定要让我们及时改正，只有这样才能打造更好的社团!</span>
+                            </div>
+
+                            <p style="color: #BB1013;">可以将您需要反馈的问题在下方输入框填写提交哈！</p>
+                        </div>
+                        <form action="">
+                            <div class="mb-3">
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                            </div>
+                            <a> <button class="btn">提交
+                                </button></a>
+                        </form>
+                    </div>
+
+                </section>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        window.onload = function () {
+            var nav = document.getElementById('nav');
+            var oNav = nav.getElementsByTagName('li');
+
+            var container = document.getElementById('container');
+            var oDiv = container.getElementsByClassName('tab');
+            for (var i = 0; i < oNav.length; i++) {
+                oNav[i].index = i;
+                oNav[i].onclick = function () {
+                    for (var i = 0; i < oNav.length; i++) {
+                        oNav[i].className = '';
+                        oDiv[i].style.display = "none";
+                    }
+                    this.className = 'act';
+                    oDiv[this.index].style.display = "block"
+                }
+                for (var m = 1; m < oNav.length; m++) {
+                    oNav[m].className = '';
+                    oDiv[m].style.display = "none";
+                }
+            }
+        };
+    </script>
+
+</body>
+<script>
+    $(window).scroll(function () {
+        if ($(".navbar ").offset().top > 50) {
+            $(".fixed-top ").addClass("top-nav ");
+        } else {
+            $(".fixed-top ").removeClass("top-nav ");
+        }
+    })
+
+    // 点击搜索栏展现消失
+    $(function () {
+        $(".btnli").click(function () {
+            $(".search").fadeToggle("slow");
+
+        });
+
+    })
+</script>
+
+</html>
