@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.open.mapper.ArticleMapper">
+    <insert id="addArticle">
+        insert into t_article values
+        <foreach item="Articleitem" collection="list" index="index" separator="," open="(" close=")">
+            #{Articleitem.id}, #{Articleitem.createDate}, #{Articleitem.summary},
+            #{Articleitem.title}, #{Articleitem.viewCounts},#{Articleitem.weight},#{Articleitem.bodyId},
+            #{Articleitem.categoryId}, #{Articleitem.thumbnail},#{Articleitem.categories}
+        </foreach>
+    </insert>
+
+    <select id="getAll" resultType="com.open.pojo.Article">
+        select * from t_article
+    </select>
+
+
+    <select id="findById" resultType="com.open.pojo.Article">
+        select * from t_article where id = #{id}
+    </select>
+
+
+</mapper>
